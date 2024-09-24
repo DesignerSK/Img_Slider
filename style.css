@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+    text-align: center;
+    margin: 20px 0 50px 0;
+    color: rgb(109, 109, 109);
+}
+
+.container {
+            max-width: 1000px;
+            height: 450px;
+            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+            margin-bottom: 50px;
+            border-radius: 20px;
+        }
+        
+        .container .sliderBilder {
+                    height: 100%;
+                    
+        }
+        
+        .container .sliderBilder img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: none;  /* ovdje smo sve ostale slike na none stavili*/
+                    border-radius: 20px;
+        }
+        
+        .container .sliderBilder img:first-child {
+                    display: block;  /* ovdje smo prvu sliku na display block stavili*/
+        }
+        
+        .container button {
+            height: 65px;
+            width: 65px;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            top: 40%;
+            position: absolute;
+            z-index: 999;
+            border-radius: 10px;
+        }
+
+        .container button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .container button .arrow {
+            border: solid #fff;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 10px;
+            transform: 0.3s ease-out;
+            outline: none;
+        }
+        
+        .container #rightBtn {
+            right: 20px;
+        }
+        
+        .container #rightBtn .arrow {
+            transform: rotate(-45deg);
+        }
+        
+        .container #leftBtn {
+            left: 20px;
+        }
+        
+        .container #leftBtn .arrow {
+            transform: rotate(135deg);
+        }
+        
